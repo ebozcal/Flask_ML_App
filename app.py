@@ -95,5 +95,9 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(host='0.0.0.0', port=443, debug=True)
 >>>>>>> 30861ef7fdb13e1650b3fe598079d6741bed6928
+=======
+    app.run(host='0.0.0.0', port=5000, debug=True)
+>>>>>>> 0ee5cdafe7eb727e364443939963e230a3dbc4a3
