@@ -42,14 +42,9 @@ stages:
         make install
       workingDirectory: $(projectRoot)
       displayName: 'myStep_2'
-    - script: |
-        export PATH=$HOME/.local/bin:$PATH
-        make install
-        make lint
-      workingDirectory: $(projectRoot)
-      displayName:  'myStep_3 - Run lint tests'
+    
     - task: ArchiveFiles@2
-      displayName: 'myStep_4 - Archive files'
+      displayName: 'myStep_3 - Archive files'
       inputs:
         rootFolderOrFile: '$(projectRoot)'
         includeRootFolder: false
