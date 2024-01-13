@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 from sklearn.preprocessing import StandardScaler
 
-# This is first commit to the new branch
+# This is first commit to the new branch from me
 
 app = Flask(__name__)
 LOG = create_logger(app)
